@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -16,6 +17,7 @@ public class DesafioApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
         //System.out.print("Código do produto: ");
